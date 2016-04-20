@@ -15,13 +15,12 @@ class NetworkingManager {
     
     // The local IP Address to connect to. Change this if you're on a different WiFi
     // Look up System Preferences -> Network -> Status -> WiFi is connected...IP Address is X.X.X.X
-    let serverIPAddr = "http://10.31.134.45:3000"
-    
+    let serverIPAddr = "10.34.19.49"
     
     // Packages up the current post it note and sends it as a POST request thanks to
     // http://stackoverflow.com/questions/26364914/http-request-in-swift-with-post-method
     func sendHTTPPostPostIt(body:String) {
-        let request = NSMutableURLRequest(URL: NSURL(string: self.serverIPAddr)!)
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://\(self.serverIPAddr):3000")!)
         request.HTTPMethod = "POST"
         let postString = body
         request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)

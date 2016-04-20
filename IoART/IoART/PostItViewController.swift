@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextViewDelegate {
+class PostItViewController: UIViewController, UITextViewDelegate {
     
     // MARK: - Data
     // The post it. This stores the color and text that will be sent to the server
@@ -28,6 +28,9 @@ class ViewController: UIViewController, UITextViewDelegate {
                 doneBarItems.last?.tintColor = sender.backgroundColor
             }
         }
+        
+        // Also change the color in the TabBar
+        self.tabBarController?.tabBar.tintColor = sender.backgroundColor
     }
     
     // MARK: - View controller lifecycle
@@ -36,8 +39,15 @@ class ViewController: UIViewController, UITextViewDelegate {
         self.postitText.inputAccessoryView = makeInputAccessoryView()
         self.postitText.tintColor = UIColor.whiteColor()
         
-        let panG = UIPanGestureRecognizer(target: self, action: #selector(ViewController.movePostIt(_:)))
+        let panG = UIPanGestureRecognizer(target: self, action: #selector(self.movePostIt(_:)))
         self.postitView.addGestureRecognizer(panG)
+        
+        self.setupTabbar()
+    }
+    
+    private func setupTabbar() {
+        UITabBar.appearance().backgroundColor = UIColor.clearColor()
+        self.tabBarController?.tabBar.setValue(true, forKey: "_hidesShadow")
     }
     
     // MARK: - UITextView Delegate
@@ -52,7 +62,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         toolbar.sizeToFit()
         
         let flex = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: self, action: nil)
-        let done = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(ViewController.hideKeyboard))
+        let done = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(self.hideKeyboard))
         done.tintColor = UIColor.appBlue()
         
         toolbar.setItems([flex, done], animated: false)

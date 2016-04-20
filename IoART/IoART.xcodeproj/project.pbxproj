@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		492C026F1CC7046200C0D570 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C026E1CC7046200C0D570 /* AppDelegate.swift */; };
-		492C02711CC7046200C0D570 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C02701CC7046200C0D570 /* ViewController.swift */; };
+		492C02711CC7046200C0D570 /* PostItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C02701CC7046200C0D570 /* PostItViewController.swift */; };
 		492C02741CC7046200C0D570 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C02721CC7046200C0D570 /* Main.storyboard */; };
 		492C02761CC7046200C0D570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492C02751CC7046200C0D570 /* Assets.xcassets */; };
 		492C02791CC7046200C0D570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C02771CC7046200C0D570 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		492C026B1CC7046200C0D570 /* IoART.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IoART.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		492C026E1CC7046200C0D570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		492C02701CC7046200C0D570 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		492C02701CC7046200C0D570 /* PostItViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItViewController.swift; sourceTree = "<group>"; };
 		492C02731CC7046200C0D570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		492C02751CC7046200C0D570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		492C02781CC7046200C0D570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 				492C02841CC71C2A00C0D570 /* Models */,
 				492C02801CC7146700C0D570 /* Buttons */,
 				492C02831CC71BE300C0D570 /* Support */,
-				492C02701CC7046200C0D570 /* ViewController.swift */,
+				492C02701CC7046200C0D570 /* PostItViewController.swift */,
 				492C02721CC7046200C0D570 /* Main.storyboard */,
 				492C02751CC7046200C0D570 /* Assets.xcassets */,
 			);
@@ -179,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492C02711CC7046200C0D570 /* ViewController.swift in Sources */,
+				492C02711CC7046200C0D570 /* PostItViewController.swift in Sources */,
 				492C02821CC7148700C0D570 /* ChangeColorButton.swift in Sources */,
 				492C02861CC71C3B00C0D570 /* PostIt.swift in Sources */,
 				492C028B1CC7DD1400C0D570 /* NetworkingManager.swift in Sources */,

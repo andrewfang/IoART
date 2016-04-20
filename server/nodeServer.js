@@ -1,6 +1,5 @@
 http = require('http');
 fs = require('fs');
-jsdom = require('jsdom');
 server = http.createServer( function(req, res) {
 
     if (req.method == 'POST') {
