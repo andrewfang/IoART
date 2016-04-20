@@ -10,4 +10,10 @@ Team
 * Christina Hung
 * Lucio Tan
 
+Build Instructions
+---
+* make sure ViewController.serverAddr is set to the ip address of your system
+* make sure node is installed
+* cd server/; node nodeServer.js
+
 Originally built for CS293S @ Stanford University

@@ -25,4 +25,14 @@ class PostIt {
         self.color = color
         self.text = ""
     }
+    
+    // Encodes itself to be sent over HTTP
+    func convertToURL() -> String {
+        let text = self.text.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        let components = CGColorGetComponents(self.color.CGColor)
+        let red = components[0]
+        let green = components[1]
+        let blue = components[2]
+        return "text=\(text)&red=\(red)&green=\(green)&blue=\(blue)"
+    }
 }
