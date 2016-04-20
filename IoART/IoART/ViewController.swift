@@ -10,9 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, UITextViewDelegate {
     
-    // Make sure this is updated depending on the computer that's running the server
-    private var serverAddr = "http://10.31.134.45:3000"
-    
     // MARK: - Data
     // The post it. This stores the color and text that will be sent to the server
     var postIt = PostIt()
@@ -90,9 +87,11 @@ class ViewController: UIViewController, UITextViewDelegate {
                     self.postitView.center = self.originalPostItCenter
                 })
             } else {
-                self.sendHTTPPostPostIt()
+                // Send off the post request here
+                NetworkingManager.sharedInstance.sendHTTPPostPostIt(self.postIt.convertToURL())
+                
+                // Send the post it flying
                 UIView.animateWithDuration(0.3, animations: {
-                    // Move it off screen
                     self.postitView.center.x = self.originalPostItCenter.x + velocity.x
                     self.postitView.center.y = self.originalPostItCenter.y + velocity.y
                     }
@@ -108,33 +107,6 @@ class ViewController: UIViewController, UITextViewDelegate {
             }
         }
     }
-    
-    // Packages up the current post it note and sends it as a POST request thanks to
-    // http://stackoverflow.com/questions/26364914/http-request-in-swift-with-post-method
-    private func sendHTTPPostPostIt() {
-        let request = NSMutableURLRequest(URL: NSURL(string: self.serverAddr)!)
-        request.HTTPMethod = "POST"
-        let postString = self.postIt.convertToURL()
-        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
-            // check for fundamental networking error
-            guard error == nil && data != nil else {
-                print("error=\(error)")
-                return
-            }
-            
-            // check for http errors
-            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {
-                print("statusCode should be 200, but is \(httpStatus.statusCode)")
-                print("response = \(response)")
-            }
-            
-            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-            print("responseString = \(responseString)")
-        }
-        task.resume()
-    }
-    
 
 }
 

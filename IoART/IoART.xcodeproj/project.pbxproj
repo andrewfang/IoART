@@ -15,6 +15,7 @@
 		492C02821CC7148700C0D570 /* ChangeColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C02811CC7148700C0D570 /* ChangeColorButton.swift */; };
 		492C02861CC71C3B00C0D570 /* PostIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C02851CC71C3B00C0D570 /* PostIt.swift */; };
 		492C02881CC71DA200C0D570 /* UIColor+IoART.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C02871CC71DA200C0D570 /* UIColor+IoART.swift */; };
+		492C028B1CC7DD1400C0D570 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C028A1CC7DD1400C0D570 /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		492C02811CC7148700C0D570 /* ChangeColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColorButton.swift; sourceTree = "<group>"; };
 		492C02851CC71C3B00C0D570 /* PostIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostIt.swift; sourceTree = "<group>"; };
 		492C02871CC71DA200C0D570 /* UIColor+IoART.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+IoART.swift"; sourceTree = "<group>"; };
+		492C028A1CC7DD1400C0D570 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		492C026D1CC7046200C0D570 /* IoART */ = {
 			isa = PBXGroup;
 			children = (
+				492C02891CC7DD0700C0D570 /* Managers */,
 				492C02841CC71C2A00C0D570 /* Models */,
 				492C02801CC7146700C0D570 /* Buttons */,
 				492C02831CC71BE300C0D570 /* Support */,
@@ -95,6 +98,14 @@
 				492C02871CC71DA200C0D570 /* UIColor+IoART.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		492C02891CC7DD0700C0D570 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				492C028A1CC7DD1400C0D570 /* NetworkingManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				492C02711CC7046200C0D570 /* ViewController.swift in Sources */,
 				492C02821CC7148700C0D570 /* ChangeColorButton.swift in Sources */,
 				492C02861CC71C3B00C0D570 /* PostIt.swift in Sources */,
+				492C028B1CC7DD1400C0D570 /* NetworkingManager.swift in Sources */,
 				492C026F1CC7046200C0D570 /* AppDelegate.swift in Sources */,
 				492C02881CC71DA200C0D570 /* UIColor+IoART.swift in Sources */,
 			);
