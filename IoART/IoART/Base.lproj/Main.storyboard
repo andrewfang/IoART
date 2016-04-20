@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IoART" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udr-x9-gQ5">
+                                <rect key="frame" x="20" y="28" width="560" height="193"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="60z-0f-JDv">
+                                        <rect key="frame" x="20" y="20" width="520" height="153"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FBa-uh-yaW">
+                                        <rect key="frame" x="170" y="155" width="220" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tud-Ww-nsM" customClass="ChangeColorButton" customModule="IoART" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.1176470588" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="changePostItColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cl-fK-Btj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfz-H6-9rg" customClass="ChangeColorButton" customModule="IoART" customModuleProvider="target">
+                                                <rect key="frame" x="38" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.40784314274787903" blue="0.066666670143604279" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="changePostItColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IGs-yf-DOr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vr-EM-f9V" customClass="ChangeColorButton" customModule="IoART" customModuleProvider="target">
+                                                <rect key="frame" x="76" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="0.98431372549999996" green="0.69803921570000005" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="changePostItColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lrp-WY-tuu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2k-ON-Xdi" customClass="ChangeColorButton" customModule="IoART" customModuleProvider="target">
+                                                <rect key="frame" x="114" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="0.20392157137393951" green="0.69803923368453979" blue="0.73725491762161255" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="changePostItColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ths-O9-aYC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE2-qi-1qP" customClass="ChangeColorButton" customModule="IoART" customModuleProvider="target">
+                                                <rect key="frame" x="152" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="0.32156863808631897" green="0.51764708757400513" blue="0.76470589637756348" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="changePostItColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e7d-Uy-Mzj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-Fe-hTP" customClass="ChangeColorButton" customModule="IoART" customModuleProvider="target">
+                                                <rect key="frame" x="190" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="0.80000001192092896" green="0.49803921580314636" blue="0.68235296010971069" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="changePostItColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TD5-fO-K6b"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.69803921570000005" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="FBa-uh-yaW" firstAttribute="centerX" secondItem="udr-x9-gQ5" secondAttribute="centerX" id="BpY-A9-Zov"/>
+                                    <constraint firstItem="60z-0f-JDv" firstAttribute="leading" secondItem="udr-x9-gQ5" secondAttribute="leading" constant="20" id="JkR-ZB-Cv1"/>
+                                    <constraint firstAttribute="bottom" secondItem="FBa-uh-yaW" secondAttribute="bottom" constant="8" id="h8f-nR-rdH"/>
+                                    <constraint firstAttribute="trailing" secondItem="60z-0f-JDv" secondAttribute="trailing" constant="20" id="lNO-sl-oG6"/>
+                                    <constraint firstItem="60z-0f-JDv" firstAttribute="top" secondItem="udr-x9-gQ5" secondAttribute="top" constant="20" id="qDm-qU-hFp"/>
+                                    <constraint firstAttribute="bottom" secondItem="60z-0f-JDv" secondAttribute="bottom" constant="20" id="vcn-et-lJD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="udr-x9-gQ5" secondAttribute="trailing" id="DAg-fG-DcZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="udr-x9-gQ5" secondAttribute="leading" id="EcS-JB-uE1"/>
+                            <constraint firstItem="udr-x9-gQ5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Pg0-SD-6KW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="udr-x9-gQ5" secondAttribute="bottom" constant="379" id="uKb-6B-2PJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="postitText" destination="60z-0f-JDv" id="QFH-Fq-ugG"/>
+                        <outlet property="postitView" destination="udr-x9-gQ5" id="6Va-ek-Mmr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+</document>

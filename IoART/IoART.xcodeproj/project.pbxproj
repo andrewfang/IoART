@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		492C026F1CC7046200C0D570 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C026E1CC7046200C0D570 /* AppDelegate.swift */; };
+		492C02711CC7046200C0D570 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C02701CC7046200C0D570 /* ViewController.swift */; };
+		492C02741CC7046200C0D570 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C02721CC7046200C0D570 /* Main.storyboard */; };
+		492C02761CC7046200C0D570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492C02751CC7046200C0D570 /* Assets.xcassets */; };
+		492C02791CC7046200C0D570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C02771CC7046200C0D570 /* LaunchScreen.storyboard */; };
+		492C02821CC7148700C0D570 /* ChangeColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C02811CC7148700C0D570 /* ChangeColorButton.swift */; };
+		492C02861CC71C3B00C0D570 /* PostIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C02851CC71C3B00C0D570 /* PostIt.swift */; };
+		492C02881CC71DA200C0D570 /* UIColor+IoART.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C02871CC71DA200C0D570 /* UIColor+IoART.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		492C026B1CC7046200C0D570 /* IoART.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IoART.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		492C026E1CC7046200C0D570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		492C02701CC7046200C0D570 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		492C02731CC7046200C0D570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		492C02751CC7046200C0D570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		492C02781CC7046200C0D570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		492C027A1CC7046200C0D570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492C02811CC7148700C0D570 /* ChangeColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColorButton.swift; sourceTree = "<group>"; };
+		492C02851CC71C3B00C0D570 /* PostIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostIt.swift; sourceTree = "<group>"; };
+		492C02871CC71DA200C0D570 /* UIColor+IoART.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+IoART.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		492C02681CC7046200C0D570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		492C02621CC7046200C0D570 = {
+			isa = PBXGroup;
+			children = (
+				492C026D1CC7046200C0D570 /* IoART */,
+				492C026C1CC7046200C0D570 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		492C026C1CC7046200C0D570 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				492C026B1CC7046200C0D570 /* IoART.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		492C026D1CC7046200C0D570 /* IoART */ = {
+			isa = PBXGroup;
+			children = (
+				492C02841CC71C2A00C0D570 /* Models */,
+				492C02801CC7146700C0D570 /* Buttons */,
+				492C02831CC71BE300C0D570 /* Support */,
+				492C02701CC7046200C0D570 /* ViewController.swift */,
+				492C02721CC7046200C0D570 /* Main.storyboard */,
+				492C02751CC7046200C0D570 /* Assets.xcassets */,
+			);
+			path = IoART;
+			sourceTree = "<group>";
+		};
+		492C02801CC7146700C0D570 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				492C02811CC7148700C0D570 /* ChangeColorButton.swift */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		492C02831CC71BE300C0D570 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				492C026E1CC7046200C0D570 /* AppDelegate.swift */,
+				492C02771CC7046200C0D570 /* LaunchScreen.storyboard */,
+				492C027A1CC7046200C0D570 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		492C02841CC71C2A00C0D570 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				492C02851CC71C3B00C0D570 /* PostIt.swift */,
+				492C02871CC71DA200C0D570 /* UIColor+IoART.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		492C026A1CC7046200C0D570 /* IoART */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492C027D1CC7046200C0D570 /* Build configuration list for PBXNativeTarget "IoART" */;
+			buildPhases = (
+				492C02671CC7046200C0D570 /* Sources */,
+				492C02681CC7046200C0D570 /* Frameworks */,
+				492C02691CC7046200C0D570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IoART;
+			productName = IoART;
+			productReference = 492C026B1CC7046200C0D570 /* IoART.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		492C02631CC7046200C0D570 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Fang Industries";
+				TargetAttributes = {
+					492C026A1CC7046200C0D570 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 492C02661CC7046200C0D570 /* Build configuration list for PBXProject "IoART" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 492C02621CC7046200C0D570;
+			productRefGroup = 492C026C1CC7046200C0D570 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				492C026A1CC7046200C0D570 /* IoART */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		492C02691CC7046200C0D570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492C02791CC7046200C0D570 /* LaunchScreen.storyboard in Resources */,
+				492C02761CC7046200C0D570 /* Assets.xcassets in Resources */,
+				492C02741CC7046200C0D570 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		492C02671CC7046200C0D570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492C02711CC7046200C0D570 /* ViewController.swift in Sources */,
+				492C02821CC7148700C0D570 /* ChangeColorButton.swift in Sources */,
+				492C02861CC71C3B00C0D570 /* PostIt.swift in Sources */,
+				492C026F1CC7046200C0D570 /* AppDelegate.swift in Sources */,
+				492C02881CC71DA200C0D570 /* UIColor+IoART.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		492C02721CC7046200C0D570 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492C02731CC7046200C0D570 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		492C02771CC7046200C0D570 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492C02781CC7046200C0D570 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		492C027B1CC7046200C0D570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		492C027C1CC7046200C0D570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		492C027E1CC7046200C0D570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IoART/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewbfang.IoART;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		492C027F1CC7046200C0D570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IoART/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewbfang.IoART;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		492C02661CC7046200C0D570 /* Build configuration list for PBXProject "IoART" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492C027B1CC7046200C0D570 /* Debug */,
+				492C027C1CC7046200C0D570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492C027D1CC7046200C0D570 /* Build configuration list for PBXNativeTarget "IoART" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492C027E1CC7046200C0D570 /* Debug */,
+				492C027F1CC7046200C0D570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 492C02631CC7046200C0D570 /* Project object */;
+}
