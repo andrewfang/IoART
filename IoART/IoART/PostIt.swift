@@ -33,6 +33,6 @@ class PostIt {
         let red = components[0]
         let green = components[1]
         let blue = components[2]
-        return "text=\(text)&red=\(red)&green=\(green)&blue=\(blue)"
+        return "{type:text, text:\(text), red:\(red), green:\(green), blue:\(blue)}"
     }
 }

@@ -13,9 +13,11 @@ class NetworkingManager {
     // NetworkingManager.sharedInstance.whateverMethod()
     static let sharedInstance = NetworkingManager()
     
+    static let IP_ADDR = "SAVED_IP_ADDR"
+    
     // The local IP Address to connect to. Change this if you're on a different WiFi
     // Look up System Preferences -> Network -> Status -> WiFi is connected...IP Address is X.X.X.X
-    let serverIPAddr = "10.34.19.49"
+    var serverIPAddr = NSUserDefaults.standardUserDefaults().stringForKey(NetworkingManager.IP_ADDR) ?? "10.34.19.49"
     
     // Packages up the current post it note and sends it as a POST request thanks to
     // http://stackoverflow.com/questions/26364914/http-request-in-swift-with-post-method

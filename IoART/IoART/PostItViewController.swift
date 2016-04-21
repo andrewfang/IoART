@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PostItViewController: UIViewController, UITextViewDelegate {
+class PostItViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate{
     
     // MARK: - Data
     // The post it. This stores the color and text that will be sent to the server
@@ -31,6 +31,9 @@ class PostItViewController: UIViewController, UITextViewDelegate {
         
         // Also change the color in the TabBar
         self.tabBarController?.tabBar.tintColor = sender.backgroundColor
+        if let webVC = self.tabBarController?.viewControllers?.last as? WebViewController {
+            webVC.appColor = sender.backgroundColor!
+        }
     }
     
     // MARK: - View controller lifecycle
@@ -39,8 +42,14 @@ class PostItViewController: UIViewController, UITextViewDelegate {
         self.postitText.inputAccessoryView = makeInputAccessoryView()
         self.postitText.tintColor = UIColor.whiteColor()
         
+        self.tabBarController?.tabBar.tintColor = UIColor.appYellow()
+        
         let panG = UIPanGestureRecognizer(target: self, action: #selector(self.movePostIt(_:)))
         self.postitView.addGestureRecognizer(panG)
+        
+        let dblTap = UITapGestureRecognizer(target: self, action: #selector(self.showIPTextField))
+        
+        self.view.addGestureRecognizer(dblTap)
         
         self.setupTabbar()
     }
@@ -63,7 +72,7 @@ class PostItViewController: UIViewController, UITextViewDelegate {
         
         let flex = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: self, action: nil)
         let done = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(self.hideKeyboard))
-        done.tintColor = UIColor.appBlue()
+        done.tintColor = UIColor.appYellow()
         
         toolbar.setItems([flex, done], animated: false)
         return toolbar
@@ -116,6 +125,30 @@ class PostItViewController: UIViewController, UITextViewDelegate {
                 })
             }
         }
+    }
+    
+    // MARK: - Set IP Address
+    private var textField:UITextField!
+    
+    func configurationTextField(textField: UITextField!) {
+        if let tField = textField {
+            self.textField = tField
+            self.textField.clearButtonMode = .WhileEditing
+            self.textField.text = NetworkingManager.sharedInstance.serverIPAddr
+        }
+    }
+
+    func showIPTextField() {
+        let popup = UIAlertController(title: "Ip Addr", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+        popup.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.Default, handler: { done in
+            if let text = self.textField.text {
+                NetworkingManager.sharedInstance.serverIPAddr = text
+                NSUserDefaults.standardUserDefaults().setValue(text, forKey: NetworkingManager.IP_ADDR)
+            }
+        }))
+        popup.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+        popup.addTextFieldWithConfigurationHandler(configurationTextField)
+        self.presentViewController(popup, animated: true, completion: nil)
     }
 
 }
